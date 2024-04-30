@@ -1,0 +1,12 @@
+def greet_user():
+ name=input("Введіть ваше ім'я: ")
+ age=input("Введіть ваш вік:  ")
+try:
+   age=int(age)
+    message = "Привіт {name}, тобі {age}!".format(name=name, age=age)
+    except ValueError:
+        message = "Введіть коректний вік у числовому форматі."
+
+    return message
+
+print(greet_user())
